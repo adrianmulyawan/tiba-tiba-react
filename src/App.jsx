@@ -1,12 +1,9 @@
 import React from "react";
-import LoginPage from "./Pages/login";
-import RegisterPage from "./Pages/register";
 
 function App() {
   return (
     <>
-      {/* <LoginPage/> */}
-      <RegisterPage/>
+      <h1>Hello World!</h1>
     </>
   );
 }
