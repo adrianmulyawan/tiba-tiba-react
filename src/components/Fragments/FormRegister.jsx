@@ -14,7 +14,6 @@ const FormRegister = () => {
         <Input label="phone_number" text="Phone Number" type="text" placeholder="Enter your phone number..." id="phone_number" />
         <div className="d-grid gap-2">
           <Button buttonType="submit" buttonStyle="btn-primary rounded-4">Register</Button>
-          <p className="text-center text-primary my-2">Sudah punya akun? <Link to="/login" className="fw-bold">klik disini</Link></p>
         </div>
       </form>
     </>
