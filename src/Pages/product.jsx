@@ -1,5 +1,6 @@
 import React from "react";
 import CardProduct from "../components/Fragments/CardProduct";
+import Navbar from "../components/Fragments/Navbar";
 
 const products = [
   {
@@ -34,10 +35,13 @@ const products = [
   }
 ];
 
+const email = localStorage.getItem('email');
+
 const ProductPage = () => {
   return (
+    <>
+    <Navbar name={ email }/>
     <div className="container">
-      <h1 className="text-center text-primary">Products</h1>
       <div className="row justify-content-center my-2">
         {
           products.map((product) => (
@@ -54,6 +58,7 @@ const ProductPage = () => {
         }
       </div>
     </div>
+    </>
   )
 };
 
