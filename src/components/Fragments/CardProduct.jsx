@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
 const CardProduct = (props) => {
-  const { children } = props;
+  const { key, children } = props;
   useEffect(() => {
     document.title = 'Product';
   });
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12">
+    <div className="col-lg-3 col-md-6 col-sm-12 my-2" key={ key }>
       <div className="card shadow">
         {/* header image */}
         {/* product desc */}
@@ -29,7 +29,7 @@ const Body = (props) => {
     <div className="card-footer bg-gray-200 border-top border-gray-300 p-4">
       {/* product desc */}
       <div className="card-body">
-        <a href="#" className="h5 text-decoration-none">
+        <a href="#" className="h5 text-decoration-none d-block text-truncate">
           { title }
         </a>
         <div className="d-flex mt-2">
@@ -42,7 +42,7 @@ const Body = (props) => {
       </div>
       {/* product price */}
       <div className="d-flex justify-content-between align-items-center mt-3">
-        <span className="h6 mb-0 text-gray">${ price }</span> 
+        <span className="h6 mb-0 text-gray">Rp { price }</span> 
         <a className="btn btn-xs btn-primary" href="#">
           Add to cart
         </a>
