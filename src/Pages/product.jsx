@@ -49,6 +49,7 @@ const ProductPage = () => {
                 <CardProduct.header source="../../public/images/laptop.jpg"></CardProduct.header>
               ) }
               <CardProduct.body title={ product.nama } price={ product.harga } tags={ product.tags }></CardProduct.body>
+              <p>{ product.tags }</p>
             </CardProduct>
           )) 
         }

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
 const CardProduct = (props) => {
-  const { key, children } = props;
+  const { children } = props;
   useEffect(() => {
     document.title = 'Product';
   });
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12 my-2" key={ key }>
+    <div className="col-lg-3 col-md-6 col-sm-12 my-2">
       <div className="card shadow">
         {/* header image */}
         {/* product desc */}
